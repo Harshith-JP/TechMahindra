@@ -70,7 +70,8 @@ class vectorThread extends Thread{
         list3.add(82);
         list3.add(56);
         System.out.println("Is list3 empty? "+list3.isEmpty());
-        list3.add(69);System.out.println("The given list is:"+list3);
+        list3.add(69);
+        System.out.println("The given list is:"+list3);
         System.out.println(" number of  elemts in the list: "+list3.size());
 
     }
