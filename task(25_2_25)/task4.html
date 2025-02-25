@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Vowels</title>
+</head>
+<body>
+    <h1>Check if a String Contains Vowels</h1>
+    <input type="text" id="inputString" placeholder="Enter a string">
+    <button onclick="checkVowels()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkVowels() {
+            const inputString = document.getElementById('inputString').value;
+            const vowels = /[aeiouAEIOU]/;
+            const result = vowels.test(inputString) ? "The string contains vowels." : "The string does not contain any vowels.";
+            document.getElementById('result').innerText = result;
+        }
+    </script>
+</body>
+</html>

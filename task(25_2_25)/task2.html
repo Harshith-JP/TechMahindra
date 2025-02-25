@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        function checkStringLength(str) {
+            if (str.length % 2 === 0) {
+                return "The string length is even.";
+            } else {
+                return "The string length is odd.";
+            }
+        }
+
+        // Example usage:
+        const inputString = prompt("ente the string"); // Replace with your string
+        const result = checkStringLength(inputString);
+        document.getElementById("result").innerText = result;
+    </script>
+    
+</body>
+</html>

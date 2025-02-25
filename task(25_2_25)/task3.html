@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Multiples of 3</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #11c317;
+        text-align: center;
+    }
+    </style>
+
+<body>
+    <button onclick="checkMultiples()">Check Multiples of 3</button>
+    <script>
+        function isMultipleOfThree(arr) {
+            return arr.length % 3 === 0;
+        }
+
+        function checkMultiples() {
+            const array = prompt('Enter numbers separated by space:').split(' ');
+            if (isMultipleOfThree(array)) {
+                alert('The array is a multiple of 3');
+            } else {
+                alert('The array is not a multiple of 3');
+            }
+        }
+// const array = prompt().split(' ');
+// if (isMultipleOfThree(array)) {
+//     alert('The array is a multiple of 3');
+// } else {
+//     alert('The array is not a multiple of 3');
+// }
+    </script>
+
+</body>
+</html>

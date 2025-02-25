@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Check</title>
+</head>
+<body>
+    <h1>Flower Checker</h1>
+    <input type="text" id="flowerInput" placeholder="Enter a flower name">
+    <button onclick="checkFlower()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        const flowers = ["Rose", "Jasmine", "Lotus"];
+
+        function checkFlower() {
+            const input = document.getElementById('flowerInput').value;
+            const result = document.getElementById('result');
+
+            if (flowers.includes(input)) {
+                result.textContent = "It's a flower.";
+            } else {
+                result.textContent = "It's not a flower.";
+            }
+        }
+    </script>
+</body>
+</html>
+</html>

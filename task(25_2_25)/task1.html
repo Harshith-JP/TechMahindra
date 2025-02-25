@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisibility Check</title>
+    <script>
+        function checkDivisibility() {
+            const number = document.getElementById('number').value;
+            const result = document.getElementById('result');
+            if (number % 13 === 0) {
+                result.textContent = `${number} is divisible by 13.`;
+            } else {
+                result.textContent = `${number} is not divisible by 13.`;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Check if a Number is Divisible by 13</h1>
+    <input type="number" id="number" placeholder="Enter a number">
+    <button onclick="checkDivisibility()">Check</button>
+    <p id="result"></p>
+</body>
+</html></html>
