@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Category - E-Magazine</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+.dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        .navbar ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .content {
+            padding: 20px;
+        }
+        .articles {
+            margin-bottom: 20px;
+        }
+        .articles h2 {
+            color: #333;
+        }
+        .article {
+            margin-bottom: 20px;
+        }
+        .article h3 {
+            color: #333;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-content {
+            margin: 0 auto;
+            width: 80%;
+        }
+        .footer-content p {
+            margin: 0 0 10px;
+        }
+        .footer-content nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-content nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        .footer-content nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer-content .sports-news {
+            margin-top: 20px;
+        }
+        .sports-news h3 {
+            color: #fff;
+        }
+        .sports-news p {
+            color: #ccc;
+        }
+        @media (max-width: 768px) {
+            .navbar ul li,
+            .footer-content nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            .footer-content {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Sports</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/pages/Home.html">Home</a></li>
+                <li><a href="/pages/category1.html">Cinema</a></li>
+                <li><a href="/pages/category2.html">Sports</a></li>
+                <li><a href="/pages/category3.html">Economic</a></li>
+                <li><a href="/pages/category4.html">Technology</a></li>
+                <li><a href="/pages/category5.html">Medicine</a></li>
+                <li><a href="/pages/About.html">About Us</a></li>
+                <li><a href="/pages/Contact-us.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <section class="articles">
+            <h2>Latest Sports News</h2>
+            <article class="article">
+                <h3>IND vs AUS ICC Champions Trophy 2025 Semifinal</h3>
+                <p>The first semifinal of the ICC Champions Trophy 2025 is set to take place between reigning ODI world champions Australia and India at the Dubai International Stadium on Tuesday. The weather is expected to be perfect for the match, with no rain predicted.</p>
+            </article>
+            <article class="article">
+                <h3>All the pressure on India in semi-final clash</h3>
+                <p>Former wicketkeeper Brad Haddin feels that all the pressure will be on India to perform in the semi-final of the Champions Trophy 2025 and claimed that Australia won't face any in the clash.</p>
+                
+            </article>
+            <article class="article">
+                <h3>Yograj Singh tells Congress leader to 'Leave the country'</h3>
+                <p>Yograj Singh has taken shots towards a Congress member for fat-shaming Rohit Sharma, the captain of the Indian cricket team, amidst their Champions Trophy 2025 campaign.</p>
+                
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 E-Magazine. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="/pages/Home.html">Home</a></li>
+                    <li><a href="/pages/category1.html">Cinema</a></li>
+                    <li><a href="/pages/category2.html">Sports</a></li>
+                    <li><a href="/pages/About.html">About Us</a></li>
+                    <li><a href="/pages/Contact-us.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="sports-news">
+                <h3>Latest in Sports</h3>
+                <p>Stay updated with the latest sports news. From football matches to cricket tournaments, we've got you covered.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

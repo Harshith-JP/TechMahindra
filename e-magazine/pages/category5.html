@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical News</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    .header {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    .header nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    .header nav ul li {
+        margin: 0 10px;
+    }
+    
+    .header nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .header nav ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    .main-content {
+        flex: 1;
+        padding: 20px;
+    }
+    
+    .main-content article {
+        margin-bottom: 20px;
+    }
+    
+    .footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .footer nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    .footer nav ul li {
+        margin: 0 10px;
+    }
+    
+    .footer nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .footer nav ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    @media (max-width: 600px) {
+        .header nav ul, .footer nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .header nav ul li, .footer nav ul li {
+            margin: 5px 0;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Medical</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/pages/Home.html">Home</a></li>
+                <li><a href="/pages/category1.html">Cinema</a></li>
+                <li><a href="/pages/category2.html">Sports</a></li>
+                <li><a href="/pages/category3.html">Economic</a></li>
+                <li><a href="/pages/category4.html">Technology</a></li>
+                <li><a href="/pages/category5.html">Medicine</a></li>
+                <li><a href="/pages/About.html">About Us</a></li>
+                <li><a href="/pages/Contact-us.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <h1>Medical News</h1>
+        <article>
+            <h2>New Breakthrough in Cancer Treatment</h2>
+            <p>Scientists have discovered a potential new cure for cancer...</p>
+        </article>
+        <article>
+            <h2>Latest COVID-19 Vaccine Developments</h2>
+            <p>Researchers have made significant progress in developing a new COVID-19 vaccine...</p>
+        </article>
+        <article>
+            <h2>Mental Health Awareness</h2>
+            <p>Recent studies highlight the importance of mental health awareness and support...</p>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 E-Magazine. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="/pages/Home.html">Home</a></li>
+                    <li><a href="/pages/category1.html">Cinema</a></li>
+                    <li><a href="/pages/category2.html">Sports</a></li>
+                    <li><a href="/pages/category3.html">Economics</a></li>
+                    <li><a href="/pages/category4.html">Technology</a></li>
+                    <li><a href="/pages/category5.html">Medical</a></li>
+                    <li><a href="/pages/Contact-us.html">Contact Us</a></li>
+                    <li><a href="/pages/about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Magazine</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        
+        .header nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .header nav ul li {
+            margin: 0 15px;
+        }
+        
+        .header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        .header nav ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        main {
+            padding: 20px;
+            flex: 1;
+        }
+        
+        h2 {
+            color: #333;
+        }
+        
+        .carousel {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            margin: 20px 0;
+            position: relative;
+            height: auto;
+        }
+        
+        .carousel-item {
+            display: none;
+            flex: 0 0 100%;
+            text-align: center;
+        }
+        
+        .carousel-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .carousel-prev, .carousel-next {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .carousel-prev {
+            left: 10px;
+        }
+        
+        .carousel-next {
+            right: 10px;
+        }
+        
+        .category-tabs {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        
+        .category-tabs button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .category-tabs button:hover {
+            background-color: #555;
+        }
+        
+        .footer-content {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        .footer-content nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .footer-content nav ul li {
+            margin: 0 10px;
+        }
+        
+        .footer-content nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        .footer-content nav ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive Design */
+        
+        @media (max-width: 768px) {
+            .header nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .carousel-prev, .carousel-next {
+                top: 40%;
+            }
+        
+            .category-tabs {
+                flex-direction: column;
+            }
+        
+            .category-tabs button {
+                margin-bottom: 10px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="/pages/Home.html">Home</a></li>
+                <li><a href="/pages/About.html">About Us</a></li>
+                <li><a href="/pages/Contact-us.html">Contact</a></li>
+            </ul>
+    </header>
+
+    <main>
+        
+
+        <section id="latest-news">
+            <h2>Breaking News</h2>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <img src="/images/bnews1.png" alt="Economic Crisis">
+                        <h3>Global Economic Crisis Worsens</h3>
+                        <p>Stock markets tumble as inflation rises.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <img src="/images/bnews2.png" alt="AI Breakthrough">
+                        <h3>AI Model Rivals Human Intelligence</h3>
+                        <p>New AI technology sparks ethical debates.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <img src="/images/bnews3.png" alt="Climate Crisis">
+                        <h3>Record-Breaking Heatwaves</h3>
+                        <p>Climate policies under scrutiny.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <img src="/images/bnews4.png" alt="Space Exploration">
+                        <h3>Private Companies Explore Space</h3>
+                        <p>New missions aim for Mars and beyond.</p>
+                    </div>
+                </div>
+                <button class="carousel-prev">Previous</button>
+                <button class="carousel-next">Next</button>
+            </div>
+        </section>
+
+        <section id="category-news">
+            <h2>Category News</h2>
+            <div class="category-tabs">
+                <a href="./pages/category1.html"><button data-category="category1"><b>Cinema</b></button></a>
+                <a href="./pages/category2.html"><button data-category="category2"><b>Sports</b></button></a>
+                <a href="./pages/category3.html"><button data-category="category3"><b>Economics</b></button></a>
+                <a href="./pages/category4.html"><button data-category="category4"><b>Technology</b></button></a>
+                <a href="./pages/category5.html"><button data-category="category5"><b>Medical</b></button></a>
+            </div>
+            <div class="category-content">
+                <!-- Category News Content -->
+                 <p>Click on a category to view the latest news.  </p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 E-Magazine. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="./pages/Home.html">Home</a></li>
+                    <li><a href="/pages/category1.html">Cinema</a></li>
+                    <li><a href="/pages/category2.html">Sports</a></li>
+                    <li><a href="/pages/category3.html">Economics</a></li>
+                    <li><a href="/pages/category4.html">Technology</a></li>
+                    <li><a href="/pages/category5.html">Medical</a></li>
+                    <li><a href="/pages/Contact-us.html">Contact Us</a></li>
+                    <li><a href="/pages/about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const carousel = document.querySelector(".carousel");
+            const items = document.querySelectorAll(".carousel-item");
+            const prevBtn = document.querySelector(".carousel-prev");
+            const nextBtn = document.querySelector(".carousel-next");
+
+            let currentIndex = 0;
+            const totalItems = items.length;
+
+            function updateCarousel() {
+                items.forEach((item, index) => {
+                    item.style.display = index === currentIndex ? "block" : "none";
+                });
+            }
+
+            prevBtn.addEventListener("click", function () {
+                currentIndex = (currentIndex === 0) ? totalItems - 1 : currentIndex - 1;
+                updateCarousel();
+            });
+
+            nextBtn.addEventListener("click", function () {
+                currentIndex = (currentIndex === totalItems - 1) ? 0 : currentIndex + 1;
+                updateCarousel();
+            });
+
+            updateCarousel();
+        });
+    </script>
+</body>
+</html>

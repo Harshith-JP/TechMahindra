@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Magazine Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+} body {
+            font-family: Arial, sans-serif;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+.dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+.header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .header nav ul li {
+            margin: 0 15px;
+        }
+        .header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .header nav ul li a:hover {
+            color: #f1c40f;
+        }
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+.nav-link {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.news-article {
+    background-color: #f4f4f4;
+    margin: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-basis: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.news-article:hover {
+    transform: scale(1.05);
+}
+
+.news-image {
+    width: 100%;
+    height: auto;
+}
+
+.news-title {
+    margin: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.news-content {
+    margin: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        padding: 10px;
+    }
+
+    .news-article {
+        flex-basis: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Home</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/pages/Home.html">Home</a></li>
+                <li><a href="/pages/category1.html">Cinema</a></li>
+                <li><a href="/pages/category2.html">Sports</a></li>
+                <li><a href="/pages/category3.html">Economic</a></li>
+                <li><a href="/pages/category4.html">Technology</a></li>
+                <li><a href="/pages/category5.html">Medicine</a></li>
+                <li><a href="/pages/About.html">About Us</a></li>
+                <li><a href="/pages/Contact-us.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+        <h1 class="header-title">Welcome to E-Magazine</h1>
+    </header>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Slides</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="news-container">
+        <div class="news-article article-1">
+            <img src="/images/google.webp" alt="Article Image" class="news-image">
+            <h2 class="news-title">Google's Search Changes Impact Websites</h2>
+            <p class="news-content">Google's new policy affects product-review websites, reducing their traffic significantly.</p>
+        </div>
+        <div class="news-article article-2">
+            <img src="/images/summit.webp" alt="Article Image" class="news-image">
+            <h2 class="news-title">World Leaders Discuss Global Security</h2>
+            <p class="news-content">International leaders meet to discuss strategies for maintaining global security and stability.</p>
+        </div>
+        <div class="news-article article-3">
+            <img src="/images/Untitled.jpg" alt="Article Image" class="news-image">
+            <h2 class="news-title">Pope Francis 'Rested Well' After Health Scare</h2>
+            <p class="news-content">The Vatican confirms Pope Francis had a restful night after a recent health concern.</p>
+        </div>
+        <div class="news-article article-4">
+            <img src="/images/treasury.webp" alt="Article Image" class="news-image">
+            <h2 class="news-title">Treasury Ends Shell Company Crackdown</h2>
+            <p class="news-content">The US Treasury has stopped enforcing certain regulations targeting shell companies.</p>
+        </div>
+        <div class="news-article article-5">
+            <img src="/images/mikeymadiso.webp" alt="Article Image" class="news-image">
+            <h2 class="news-title">Mikey Madison Wins Best Actress Oscar</h2>
+            <p class="news-content">Mikey Madison takes home the Best Actress award at the Oscars.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 E-Magazine. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="/pages/Home.html">Home</a></li>
+                    <li><a href="/pages/category1.html">Cinema</a></li>
+                    <li><a href="/pages/category2.html">Sports</a></li>
+                    <li><a href="/pages/category3.html">Economics</a></li>
+                    <li><a href="/pages/category4.html">Technology</a></li>
+                    <li><a href="/pages/category5.html">Medical</a></li>
+                    <li><a href="/pages/Contact-us.html">Contact Us</a></li>
+                    <li><a href="/pages/about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    alert(`You clicked on ${this.textContent}`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
