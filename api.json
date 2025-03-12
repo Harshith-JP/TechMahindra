@@ -1,0 +1,22 @@
+{
+    "workouts": [
+      {
+        "id": 1,
+        "name": "Strength Training",
+        "duration": 60,
+        "description": "Full body strength workout."
+      },
+      {
+        "id": 2,
+        "name": "Cardio Blast",
+        "duration": 45,
+        "description": "High-intensity cardio session."
+      },
+      {
+        "id": 3,
+        "name": "Yoga Flow",
+        "duration": 75,
+        "description": "Relaxing and stretching yoga."
+      }
+    ]
+  }

@@ -1,1 +1,193 @@
 /* You can add global styles to this file, and also import other style files */
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Light grey background */
+    color: #343a40; /* Dark grey text */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px; /* Limit container width for larger screens */
+  }
+  
+  /* Typography */
+  h2 {
+    font-weight: 600;
+    color: #495057; /* Slightly lighter dark grey */
+    margin-bottom: 1.5rem;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+  
+  /* Auth Component Styles (Keeping Bootstrap) */
+  app-auth {
+    display: block;
+  }
+  
+  /* Quiz Component Styles */
+  app-quiz {
+    display: block;
+    margin-top: 2rem; /* Add some spacing */
+  }
+  
+  app-quiz .container {
+    max-width: 600px; /* Limit quiz container width */
+  }
+  
+  app-quiz h2 {
+    text-align: center;
+  }
+  
+  app-quiz p {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  app-quiz select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+  }
+  
+  app-quiz select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+  }
+  
+  app-quiz button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+  }
+  
+  app-quiz button:hover {
+    background-color: #0069d9; /* Darker shade on hover */
+  }
+  
+  /* Dashboard Component Styles */
+  app-dashboard {
+    display: block;
+    margin-top: 2rem;
+  }
+  
+  app-dashboard .container {
+    max-width: 600px; /* Limit dashboard container width */
+  }
+  
+  app-dashboard h2 {
+    text-align: center;
+  }
+  
+  app-dashboard .card {
+    border: 1px solid #dee2e6; /* Light border */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Subtle shadow */
+  }
+  
+  app-dashboard .card-body {
+    padding: 1.5rem;
+  }
+  
+  app-dashboard .card-text {
+    margin-bottom: 0.75rem;
+  }
+  
+  app-dashboard button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+  }
+  
+  app-dashboard button:hover {
+    background-color: #c82333; /* Darker shade on hover */
+  }
+  
+  app-dashboard a {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.15s ease-in-out;
+  }
+  
+  app-dashboard a:hover {
+    background-color: #0069d9; /* Darker shade on hover */
+  }
+  
+  /* Workouts Component Styles */
+  app-workouts {
+    display: block;
+    margin-top: 2rem;
+  }
+  
+  app-workouts .container {
+    max-width: 600px; /* Limit workouts container width */
+  }
+  
+  app-workouts h2 {
+    text-align: center;
+  }
+  
+  /* Workout Item Component Styles */
+  app-workout-item {
+    display: block;
+  }
+  
+  app-workout-item a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #343a40;
+    border-bottom: 1px solid #dee2e6;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  app-workout-item a:last-child {
+    border-bottom: none;
+  }
+  
+  app-workout-item a:hover {
+    background-color: #e9ecef; /* Lighter grey on hover */
+  }
+  
+  app-workout-item h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  app-workout-item small {
+    color: #6c757d;
+    font-size: 0.9rem;
+  }
+  
+  /* Utility Classes (Optional) */
+  .text-muted {
+    color: #6c757d;
+  }
