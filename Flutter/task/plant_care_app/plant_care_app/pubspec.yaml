@@ -1,0 +1,31 @@
+name: plant_care_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  logger: ^2.5.0 # Added logger
+  cupertino_icons: ^1.0.8
+  firebase_core: ^2.24.2 # Updated to latest version as of now
+  cloud_firestore: ^4.13.6 # Updated to latest version as of now
+  intl: ^0.19.0 # Updated to latest version as of now
+  flutter_localizations:
+    sdk: flutter
+  easy_localization: ^3.0.0 # Added easy_localization
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0 # Updated to latest version as of now
+
+flutter:
+  uses-material-design: true
+  assets: # Added assets section for easy_localization
+    - assets/translations/
